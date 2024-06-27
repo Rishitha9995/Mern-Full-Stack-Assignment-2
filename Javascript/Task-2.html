@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task-2</title>
+</head>
+
+<body>
+    <script>
+        function sort(str) {
+            var arr = str.split("");
+            var res = arr.sort().join("");
+            return res;
+        }
+        var str = prompt("Enter a String to sort it");
+        var result = sort(str);
+        document.writeln("Original String is: "+str+"<br>");
+        document.writeln("Sorted String is: "+result);
+    </script>
+</body>
+
+</html>

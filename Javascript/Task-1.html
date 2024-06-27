@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Task-1</title>
+</head>
+
+<body>
+    <script>
+        function reverse(n,rev=0){
+            if(n===0){
+                return rev;
+            }
+            return reverse(Math.floor(n/10), rev*10 + n%10);
+        }
+        var n = prompt("Enter a number to reverse it");
+        var result = reverse(n);
+        document.writeln("Original Number is: "+n+"<br>");
+        document.writeln("Reversed Number is: "+result);
+    </script>
+</body>
+
+</html>
